@@ -23,8 +23,8 @@ module.exports = {
         }
       },
       {
-        test: /\.(css)$/,
-        use: [ExtractCssChunks.loader, 'css-loader'],
+        test: /\.(scss)$/,
+        use: [ExtractCssChunks.loader, 'css-loader', 'sass-loader'],
       },
     ]
   },

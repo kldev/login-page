@@ -21,6 +21,7 @@ body {
     align-items: center;
     background-color: #eee;
     font-family: sans-serif;
+    overflow: hidden;
 }
 
 
@@ -56,10 +57,14 @@ body {
 
 .container
 {
+    width: 100vw;
+    
     display: flex;
     flex-direction: column;
     min-height: 500px;
-    justify-content: center;        
+    justify-content: center;
+    padding: 1em;
+        
 }
 
 
@@ -69,31 +74,39 @@ body {
     background-clip: padding-box;
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     flex-grow: 1;
+    min-width: 400px;
+    min-height: 300px;
    
 }
 
 .container-right {    
-    background-color: #9e9892;
-    z-index: 1;
-    flex-shrink: 1;
-    max-width: 300px;
-    margin: 20px;
+    background-color: #424242;
+    z-index: 1;        
+    margin: 20px;    
 }
 
 .form-login {
+    h3 {
+        color: #fff;
+    }
     display: flex;
     flex-direction: column;    
     padding: 2em;
     box-sizing: border-box;
     justify-content: right;
 
+    .group {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .container
     {
-        min-width: 80vh;
+        min-height: unset;
+        min-width: 80vw;
         flex-direction: row;
         height: 60vh;
 
@@ -101,6 +114,19 @@ body {
 
     .bg-logo
     {
-        max-width: 600px;
+        width: 100%;
+        max-width: 500px;
+        min-height: 350px;
+        max-height: 100%;
+    }
+
+    .form-login {
+        max-width: 400px;
+
+    }
+
+    .container-right
+    {
+        max-width: 400px;
     }
 }
