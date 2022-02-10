@@ -16,7 +16,7 @@
     "extract-css-chunks-webpack-plugin": "^4.7.5",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.3.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2",
     "to-string-loader": "^1.1.6",
     "ts-loader": "^6.2.2",
